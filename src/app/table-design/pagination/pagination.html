@@ -1,0 +1,22 @@
+<div class="pagination-container">
+    <div class="pagination-info">
+      {{ getRangeText() }}
+    </div>
+  
+    <div class="pagination-wrapper">
+      <ul class="pagination">
+        <li [class.disabled]="currentPage === 1" (click)="goToPage(1)">|&lt;</li>
+        <li [class.disabled]="currentPage === 1" (click)="prevPage()">&lt;</li>
+  
+        <li *ngFor="let page of totalPagesArray"
+            [class.active]="page === currentPage"
+            (click)="goToPage(page)">
+          {{ page }}
+        </li>
+  
+        <li [class.disabled]="currentPage === totalPages" (click)="nextPage()">&gt;</li>
+        <li [class.disabled]="currentPage === totalPages" (click)="goToPage(totalPages)">&gt;|</li>
+      </ul>
+    </div>
+  </div>
+  

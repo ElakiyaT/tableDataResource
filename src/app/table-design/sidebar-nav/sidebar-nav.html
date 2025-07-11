@@ -1,0 +1,29 @@
+<nav class="sidebar" [class.collapsed]="isCollapsed()">
+    <div class="sidebar-toggle-wrapper">
+        <button class="sidebar-toggle" (click)="toggleSidebar()">
+          <i class="fas" [ngClass]="isCollapsed() ? 'fa-angle-right' : 'fa-angle-left'"></i>
+        </button>
+      </div>
+      
+      <div class="top-icons">
+        <a [routerLink]="'/dashboard'" routerLinkActive="active-link"><i class="fas fa-th-large"></i><span *ngIf="!isCollapsed()">Dashboard</span></a>
+        <a [routerLink]="'/analytics'" routerLinkActive="active-link"><i class="fas fa-chart-bar"></i><span *ngIf="!isCollapsed()">Analytics</span></a>
+        <a [routerLink]="'/search'" routerLinkActive="active-link"><i class="fas fa-search"></i><span *ngIf="!isCollapsed()">Search</span></a>
+        <a [routerLink]="'/projects'" routerLinkActive="active-link"><i class="fas fa-briefcase"></i><span *ngIf="!isCollapsed()">Projects</span></a>
+      </div>
+      
+      <div class="bottom-icons">
+        <a [routerLink]="'/notifications'"><i class="fas fa-bell"></i><span *ngIf="!isCollapsed()">Notifications</span></a>
+        <a 
+          [routerLink]="'/settings'" 
+           routerLinkActive="active-link" 
+            [routerLinkActiveOptions]="{ exact: true }"
+            >
+         <i class="fas fa-cog"></i>
+             <span *ngIf="!isCollapsed()">Settings</span>
+          </a>
+
+        <a [routerLink]="'/tasks'"><i class="fas fa-clipboard-list"></i><span *ngIf="!isCollapsed()">Tasks</span></a>
+        <a [routerLink]="'/logout'"><i class="fas fa-sign-out-alt"></i><span *ngIf="!isCollapsed()">Logout</span></a>
+      </div>
+    </nav>

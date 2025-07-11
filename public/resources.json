@@ -1,0 +1,540 @@
+[
+    {
+      "name": "Resource 1",
+      "type": "Customer",
+      "created": "1 Jan 2021 09:00",
+      "modified": "2 Jan 2021 10:00",
+      "icon": "👤",
+      "children": [ {
+        "name": "Resource 1.1",
+        "icon": "👥",
+        "children": [
+          {
+            "name": "Resource 1.1.1",
+            "icon": "👨‍🔧",
+            "children": []
+          },
+          {
+            "name": "Resource 1.1.2",
+            "icon": "👤",
+            "children": []
+          }
+        ]
+      }]
+    },
+    {
+      "name": "Resource 2",
+      "type": "Customer",
+      "created": "2 Jul 2022 10:21",
+      "modified": "2 Jul 2022 10:21",
+      "icon": "👤",
+      "children": [
+        {
+          "name": "Resource 2.1",
+          "icon": "👥",
+          "children": [
+            {
+              "name": "Resource 2.1.1",
+              "icon": "👨‍🔧",
+              "children": []
+            },
+            {
+              "name": "Resource 2.1.2",
+              "icon": "👤",
+              "children": []
+            }
+          ]
+        },
+        {
+          "name": "Resource 2.2",
+          "icon": "📁",
+          "children": []
+        },
+        {
+          "name": "Resource 2.3",
+          "icon": "👩‍💻",
+          "children": []
+        }
+      ]
+    },
+    {
+      "name": "Resource 3",
+      "type": "Admin",
+      "created": "10 Mar 2021 14:00",
+      "modified": "11 Mar 2021 09:00",
+      "icon": "👮",
+      "children": [ {
+        "name": "Resource 3.1",
+        "icon": "👥",
+        "children": [
+          {
+            "name": "Resource 3.1.1",
+            "icon": "👨‍🔧",
+            "children": []
+          },
+          {
+            "name": "Resource 3.1.2",
+            "icon": "👤",
+            "children": []
+          }
+        ]
+      }]
+    },
+    {
+      "name": "Resource 4",
+      "type": "Manager",
+      "created": "15 Feb 2021 10:45",
+      "modified": "15 Feb 2021 12:00",
+      "icon": "👔",
+      "children": [ {
+        "name": "Resource 4.1",
+        "icon": "👥",
+        "children": [
+          {
+            "name": "Resource 4.1.1",
+            "icon": "👨‍🔧",
+            "children": []
+          },
+          {
+            "name": "Resource 4.1.2",
+            "icon": "👤",
+            "children": []
+          }
+        ]
+      }]
+    },
+    {
+      "name": "Resource 5",
+      "type": "Customer",
+      "created": "20 Feb 2021 11:00",
+      "modified": "21 Feb 2021 11:30",
+      "icon": "👤",
+      "children": [ {
+        "name": "Resource 5.1",
+        "icon": "👥",
+        "children": [
+          {
+            "name": "Resource 5.1.1",
+            "icon": "👨‍🔧",
+            "children": []
+          },
+          {
+            "name": "Resource 5.1.2",
+            "icon": "👤",
+            "children": []
+          }
+        ]
+      }]
+    },
+    {
+      "name": "Resource 6",
+      "type": "Customer",
+      "created": "22 Feb 2023 13:00",
+      "modified": "23 Feb 2023 13:30",
+      "icon": "👤",
+      "children": [ {
+        "name": "Resource 6.1",
+        "icon": "👥",
+        "children": [
+          {
+            "name": "Resource 6.1.1",
+            "icon": "👨‍🔧",
+            "children": []
+          },
+          {
+            "name": "Resource 6.1.2",
+            "icon": "👤",
+            "children": []
+          }
+        ]
+      }]
+    },
+    {
+      "name": "Resource 7",
+      "type": "Customer",
+      "created": "15 May 2020 8:24",
+      "modified": "15 May 2020 8:24",
+      "icon": "👤",
+      "children": [ {
+        "name": "Resource 7.1",
+        "icon": "👥",
+        "children": [
+          {
+            "name": "Resource 7.1.1",
+            "icon": "👨‍🔧",
+            "children": []
+          },
+          {
+            "name": "Resource 7.1.2",
+            "icon": "👤",
+            "children": []
+          }
+        ]
+      }]
+    },
+    {
+      "name": "Resource 8",
+      "type": "Customer",
+      "created": "2 Jul 2025 10:21",
+      "modified": "2 Jul 2025 10:21",
+      "icon": "👤",
+      "children": [ {
+        "name": "Resource 8.1",
+        "icon": "👥",
+        "children": [
+          {
+            "name": "Resource 8.1.1",
+            "icon": "👨‍🔧",
+            "children": []
+          },
+          {
+            "name": "Resource 8.1.2",
+            "icon": "👤",
+            "children": []
+          }
+        ]
+      }]
+    },
+    {
+      "name": "Resource 9",
+      "type": "Customer",
+      "created": "1 Apr 2021 10:00",
+      "modified": "2 Apr 2021 11:00",
+      "icon": "👩‍🏫",
+      "children": [ {
+        "name": "Resource 9.1",
+        "icon": "👥",
+        "children": [
+          {
+            "name": "Resource 9.1.1",
+            "icon": "👨‍🔧",
+            "children": []
+          },
+          {
+            "name": "Resource 9.1.2",
+            "icon": "👩‍🏫",
+            "children": []
+          }
+        ]
+      }]
+    },
+    {
+      "name": "Resource 10",
+      "type": "Support",
+      "created": "3 Apr 2025 12:00",
+      "modified": "3 Apr 2025 12:45",
+      "icon": "🧑‍🔬",
+      "children": [ {
+        "name": "Resource 10.1",
+        "icon": "👥",
+        "children": [
+          {
+            "name": "Resource 10.1.1",
+            "icon": "👨‍🔧",
+            "children": []
+          },
+          {
+            "name": "Resource 10.1.2",
+            "icon": "👤",
+            "children": []
+          }
+        ]
+      }]
+    },
+    {
+      "name": "Resource 11",
+      "type": "Customer",
+      "created": "4 Apr 2021 09:15",
+      "modified": "4 Apr 2021 09:45",
+      "icon": "👤",
+      "children": [ {
+        "name": "Resource 11.1",
+        "icon": "👥",
+        "children": [
+          {
+            "name": "Resource 11.1.1",
+            "icon": "👨‍🔧",
+            "children": []
+          },
+          {
+            "name": "Resource 11.1.2",
+            "icon": "👤",
+            "children": []
+          }
+        ]
+      }]
+    },
+    {
+      "name": "Resource 12",
+      "type": "Customer",
+      "created": "5 Apr 2025 10:20",
+      "modified": "6 Apr 2025 10:30",
+      "icon": "👩‍🏫",
+      "children": [ {
+        "name": "Resource 12.1",
+        "icon": "👥",
+        "children": [
+          {
+            "name": "Resource 12.1.1",
+            "icon": "👨‍🔧",
+            "children": []
+          },
+          {
+            "name": "Resource 12.1.2",
+            "icon": "👤",
+            "children": []
+          }
+        ]
+      }]
+    },
+    {
+      "name": "Resource 13",
+      "type": "Developer",
+      "created": "6 Apr 2021 11:00",
+      "modified": "6 Apr 2021 11:15",
+      "icon": "💻",
+      "children": [ {
+        "name": "Resource 13.1",
+        "icon": "👥",
+        "children": [
+          {
+            "name": "Resource 13.1.1",
+            "icon": "👨‍🔧",
+            "children": []
+          },
+          {
+            "name": "Resource 13.1.2",
+            "icon": "👤",
+            "children": []
+          }
+        ]
+      }]
+    },
+    {
+      "name": "Resource 14",
+      "type": "Team",
+      "created": "7 Apr 2025 09:00",
+      "modified": "7 Apr 2025 10:00",
+      "icon": "👨‍👩‍👧‍👦",
+      "children": [
+        {
+          "name": "Resource 14.1",
+          "icon": "👩‍🏫",
+          "children": []
+        },
+        {
+          "name": "Resource 14.2",
+          "icon": "👩‍🏫",
+          "children": []
+        }
+      ]
+    },
+    {
+      "name": "Resource 15",
+      "type": "Customer",
+      "created": "8 Apr 2021 14:00",
+      "modified": "8 Apr 2021 15:00",
+      "icon": "🧑‍🏭",
+      "children": [ {
+        "name": "Resource 15.1",
+        "icon": "👥",
+        "children": [
+          {
+            "name": "Resource 15.1.1",
+            "icon": "👮",
+            "children": []
+          },
+          {
+            "name": "Resource 15.1.2",
+            "icon": "👤",
+            "children": []
+          }
+        ]
+      }]
+    },
+    {
+      "name": "Resource 16",
+      "type": "Designer",
+      "created": "9 Apr 2021 16:00",
+      "modified": "9 Apr 2021 16:30",
+      "icon": "👮",
+      "children": [ {
+        "name": "Resource 16.1",
+        "icon": "👥",
+        "children": [
+          {
+            "name": "Resource 16.1.1",
+            "icon": "👨‍🔧",
+            "children": []
+          },
+          {
+            "name": "Resource 16.1.2",
+            "icon": "👮",
+            "children": []
+          }
+        ]
+      }]
+    },
+    {
+      "name": "Resource 17",
+      "type": "Customer",
+      "created": "10 Apr 2021 17:00",
+      "modified": "10 Apr 2021 17:30",
+      "icon": "👤",
+      "children": [ {
+        "name": "Resource 17.1",
+        "icon": "👥",
+        "children": [
+          {
+            "name": "Resource 17.1.1",
+            "icon": "👮",
+            "children": []
+          },
+          {
+            "name": "Resource 17.1.2",
+            "icon": "👤",
+            "children": []
+          }
+        ]
+      }]
+    },
+    {
+      "name": "Resource 18",
+      "type": "Customer",
+      "created": "11 Apr 2021 08:00",
+      "modified": "11 Apr 2021 08:45",
+      "icon": "👮",
+      "children": [ {
+        "name": "Resource 18.1",
+        "icon": "👥",
+        "children": [
+          {
+            "name": "Resource 18.1.1",
+            "icon": "👨‍🔧",
+            "children": []
+          },
+          {
+            "name": "Resource 18.1.2",
+            "icon": "👤",
+            "children": []
+          }
+        ]
+      }]
+    },
+    {
+      "name": "Resource 19",
+      "type": "Customer",
+      "created": "12 Apr 2021 09:00",
+      "modified": "12 Apr 2021 09:45",
+      "icon": "",
+      "children": [ {
+        "name": "Resource 19.1",
+        "icon": "👥",
+        "children": [
+          {
+            "name": "Resource 19.1.1",
+            "icon": "👨‍🔧",
+            "children": []
+          },
+          {
+            "name": "Resource 19.1.2",
+            "icon": "👤",
+            "children": []
+          }
+        ]
+      }]
+    },
+    {
+      "name": "Resource 20",
+      "type": "Admin",
+      "created": "13 Apr 2021 10:00",
+      "modified": "13 Apr 2021 10:30",
+      "icon": "🔐",
+      "children": [ {
+        "name": "Resource 20.1",
+        "icon": "👥",
+        "children": [
+          {
+            "name": "Resource 20.1.1",
+            "icon": "👨‍🔧",
+            "children": []
+          },
+          {
+            "name": "Resource 20.1.2",
+            "icon": "👤",
+            "children": []
+          }
+        ]
+      }]
+    },
+    {
+      "name": "Resource 21",
+      "type": "Customer",
+      "created": "14 Apr 2021 11:00",
+      "modified": "14 Apr 2021 11:45",
+      "icon": "👤",
+      "children": [ {
+        "name": "Resource 21.1",
+        "icon": "👥",
+        "children": [
+          {
+            "name": "Resource 21.1.1",
+            "icon": "👨‍🔧",
+            "children": []
+          },
+          {
+            "name": "Resource 21.1.2",
+            "icon": "👤",
+            "children": []
+          }
+        ]
+      }]
+    },
+    {
+      "name": "Resource 22",
+      "type": "Customer",
+      "created": "15 Apr 2021 12:00",
+      "modified": "15 Apr 2021 12:30",
+      "icon": "👤",
+      "children": [ {
+        "name": "Resource 22.1",
+        "icon": "👥",
+        "children": [
+          {
+            "name": "Resource 22.1.1",
+            "icon": "👨‍🔧",
+            "children": []
+          },
+          {
+            "name": "Resource 22.1.2",
+            "icon": "👤",
+            "children": []
+          }
+        ]
+      }]
+    },
+    {
+      "name": "Resource 23",
+      "type": "Customer",
+      "created": "16 Apr 2021 13:00",
+      "modified": "16 Apr 2021 13:30",
+      "icon": "👤",
+      "children": [ {
+        "name": "Resource 23.1",
+        "icon": "👥",
+        "children": [
+          {
+            "name": "Resource 23.1.1",
+            "icon": "👨‍🔧",
+            "children": []
+          },
+          {
+            "name": "Resource 23.1.2",
+            "icon": "👤",
+            "children": []
+          }
+        ]
+      }]
+    }
+  ]
+  

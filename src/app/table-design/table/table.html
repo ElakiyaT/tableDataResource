@@ -1,0 +1,18 @@
+<div class="toolbar">
+    <div class="total-label">Total: {{ totalResources }} Resources</div>
+  
+    
+    <div class="actions">
+        <button mat-button color="primary">+ Add New Resource</button>
+      
+        <button mat-button [matMenuTriggerFor]="exportMenu">⬇</button>
+        <button mat-button [matMenuTriggerFor]="exportMenu">Export</button>
+        <button mat-button [matMenuTriggerFor]="exportMenu">▼</button>
+      
+        <mat-menu #exportMenu="matMenu">
+          <button mat-menu-item (click)="export('CSV')">Export as CSV</button>
+        </mat-menu>
+      </div>
+      
+  </div>
+  

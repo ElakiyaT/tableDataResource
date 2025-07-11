@@ -1,0 +1,90 @@
+<!-- Show No Data if not on settings -->
+<div *ngIf="!isSettingsRoute()">
+    <div class="no-data">
+      <h2>No data found</h2>
+    </div>
+  </div>
+  
+<div *ngIf="isSettingsRoute() && displayedResources.length > 0" class="resource-table">
+
+    <!-- Table Header -->
+    <div class="table-header">
+      <div class="col checkbox-col">
+        <input
+          type="checkbox"
+          [checked]="selectAll"
+          (change)="toggleSelectAll()" />
+      </div>
+      <div class="col resource-name" (click)="sortBy('name')">
+        Resource Name <span class="sort-icon">⇅</span>
+      </div>
+      <div class="col type" (click)="sortBy('type')">
+        Type of Resource <span class="sort-icon">⇅</span>
+      </div>
+      <div class="col created" (click)="sortBy('created')">
+        Created On <span class="sort-icon">⇅</span>
+      </div>
+      <div class="col modified" (click)="sortBy('modified')">
+        Modified On <span class="sort-icon">⇅</span>
+      </div>
+      
+        <div class="header-actions">
+        <span class="search-icon">🔍</span>
+        <span class="menu-icon">⋮</span>
+      </div>
+    </div>
+  
+    <!-- Recursive Rendering of Resources -->
+    <ng-container *ngFor="let resource of displayedResources">
+      <ng-template
+        [ngTemplateOutlet]="renderRow"
+        [ngTemplateOutletContext]="{ resource: resource, level: 0 }">
+      </ng-template>
+    </ng-container>
+  
+    <!-- Template for Rows -->
+    <ng-template #renderRow let-resource="resource" let-level="level">
+      <div class="table-row" [style.paddingLeft.px]="level * 20">
+        <div class="col checkbox-col">
+          <input
+            type="checkbox"
+            [checked]="isSelected(resource)"
+            (change)="toggleSingleSelection(resource, $event)" />
+        </div>
+  
+        <div class="col resource-name">
+          <span
+            *ngIf="resource.children?.length"
+            class="toggle-box"
+            (click)="toggle(resource)">
+            {{ isExpanded(resource) ? '-' : '+' }}
+          </span>
+          <span class="icon">{{ resource.icon }}</span> {{ resource.name }}
+        </div>
+  
+        <div class="col type">{{ resource.type || '-' }}</div>
+        <div class="col created">{{ resource.created || '-' }}</div>
+        <div class="col modified">{{ resource.modified || '-' }}</div>
+      </div>
+  
+      <!-- Recursive Children -->
+      <ng-container *ngIf="isExpanded(resource)">
+        <ng-container *ngFor="let child of resource.children">
+          <ng-template
+            [ngTemplateOutlet]="renderRow"
+            [ngTemplateOutletContext]="{ resource: child, level: level + 1 }">
+          </ng-template>
+        </ng-container>
+      </ng-container>
+    </ng-template>
+  </div>
+
+
+  <app-pagination
+    [currentPage]="currentPage"
+    [totalPages]="totalPages"
+    [pageSize]="pageSize"
+    [totalItems]="allResources.length"
+    (pageChanged)="onPageChange($event)">
+  </app-pagination>
+  
